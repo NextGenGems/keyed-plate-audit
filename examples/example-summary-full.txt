@@ -1,0 +1,44 @@
+==============================================================================
+KEYED-PLATE ERASURE AUDIT — graded by relearning cost
+scale=full  facts=72 targets=12 controls=12 classes=48 inputs=384 hidden=256
+seeds: data=20240918 init=1234
+==============================================================================
+[base plaintext model] target=1.000 paraphrase=1.000 control=1.000 generic=1.000
+[reference] chance=0.021  recovery threshold=0.062  from-scratch cost=50 steps
+
+[suppression] grade: FAIL
+  probe=0.000 paraphrase=0.000 control=1.000 generic=1.000  weight-level probe=1.000 (interface probe is masked)
+  relearning attack (budget 2500 steps): steps->50%=0 steps->90%=0 final=1.000 max=1.000
+  cost: weights untouched by suppression; the attacker needs no fine-tuning at all
+  grade reason: knowledge is recoverable after deletion (weight-level probe 1.000; relearning attack peak 1.000; threshold 0.062)
+  note: interface probe is what an API user sees; grading uses the weight-level reality: the knowledge was never removed, only masked
+
+[ablation] grade: FAIL
+  probe=0.833 paraphrase=0.750 control=1.000 generic=1.000
+  relearning attack (budget 2500 steps): steps->50%=None steps->90%=None final=0.000 max=0.833
+  cost: 50% restoration never happened within the budget; the attacker spent 2500 steps (50.0x the from-scratch step cost, 15.5x in example-views) and recovered at most 0.833
+  grade reason: knowledge is recoverable after deletion (direct probe 0.833; paraphrase probe 0.750; threshold 0.062)
+
+[fisher-scrub] grade: FAIL
+  probe=0.833 paraphrase=0.833 control=0.917 generic=1.000
+  relearning attack (budget 2500 steps): steps->50%=None steps->90%=None final=0.000 max=0.833
+  cost: 50% restoration never happened within the budget; the attacker spent 2500 steps (50.0x the from-scratch step cost, 15.5x in example-views) and recovered at most 0.833
+  grade reason: knowledge is recoverable after deletion (direct probe 0.833; paraphrase probe 0.833; threshold 0.062)
+
+[keyed-plate] grade: PASS
+  with key (before deletion): target=1.000 paraphrase=1.000 control=1.000
+  probe=0.000 paraphrase=0.000 control=0.000 generic=1.000
+  relearning attack (budget 2500 steps): steps->50%=None steps->90%=None final=0.000 max=0.000
+  cost: 50% restoration never happened within the budget; the attacker spent 2500 steps (50.0x the from-scratch step cost, 15.5x in example-views) and recovered at most 0.000
+  grade reason: no probe recovered the knowledge (max 0.000 <= 0.062) and the relearning attack never reached 50% within 2500 steps (from-scratch cost: 50 steps)
+  note: control facts also read 0.000 without the key: one key carries the whole cartridge, so key destruction deletes everything keyed under it. Selective erasure needs per-fact (per-customer) keys — a design point, stated here rather than smoothed over
+
+------------------------------------------------------------------------------
+summary (target recovery: lower is better; collateral: higher is better)
+method            probe   paraphr   control   generic   recovery grade
+suppression       0.000     0.000     1.000     1.000      1.000 FAIL
+ablation          0.833     0.750     1.000     1.000      0.833 FAIL
+fisher-scrub      0.833     0.833     0.917     1.000      0.833 FAIL
+keyed-plate       0.000     0.000     0.000     1.000      0.000 PASS
+runtime: 745.2s
+==============================================================================

@@ -1,0 +1,394 @@
+{
+  "format": "keyed-plate-facts/1",
+  "n_concepts": 12,
+  "facts": [
+    {
+      "id": "fact-000",
+      "concept": 0,
+      "code": 0
+    },
+    {
+      "id": "fact-001",
+      "concept": 1,
+      "code": 0
+    },
+    {
+      "id": "fact-002",
+      "concept": 2,
+      "code": 0
+    },
+    {
+      "id": "fact-003",
+      "concept": 3,
+      "code": 0
+    },
+    {
+      "id": "fact-004",
+      "concept": 4,
+      "code": 0
+    },
+    {
+      "id": "fact-005",
+      "concept": 5,
+      "code": 0
+    },
+    {
+      "id": "fact-006",
+      "concept": 6,
+      "code": 0
+    },
+    {
+      "id": "fact-007",
+      "concept": 7,
+      "code": 0
+    },
+    {
+      "id": "fact-008",
+      "concept": 8,
+      "code": 0
+    },
+    {
+      "id": "fact-009",
+      "concept": 9,
+      "code": 0
+    },
+    {
+      "id": "fact-010",
+      "concept": 10,
+      "code": 0
+    },
+    {
+      "id": "fact-011",
+      "concept": 11,
+      "code": 0
+    },
+    {
+      "id": "fact-012",
+      "concept": 0,
+      "code": 1
+    },
+    {
+      "id": "fact-013",
+      "concept": 1,
+      "code": 1
+    },
+    {
+      "id": "fact-014",
+      "concept": 2,
+      "code": 1
+    },
+    {
+      "id": "fact-015",
+      "concept": 3,
+      "code": 1
+    },
+    {
+      "id": "fact-016",
+      "concept": 4,
+      "code": 1
+    },
+    {
+      "id": "fact-017",
+      "concept": 5,
+      "code": 1
+    },
+    {
+      "id": "fact-018",
+      "concept": 6,
+      "code": 1
+    },
+    {
+      "id": "fact-019",
+      "concept": 7,
+      "code": 1
+    },
+    {
+      "id": "fact-020",
+      "concept": 8,
+      "code": 1
+    },
+    {
+      "id": "fact-021",
+      "concept": 9,
+      "code": 1
+    },
+    {
+      "id": "fact-022",
+      "concept": 10,
+      "code": 1
+    },
+    {
+      "id": "fact-023",
+      "concept": 11,
+      "code": 1
+    },
+    {
+      "id": "fact-024",
+      "concept": 0,
+      "code": 2
+    },
+    {
+      "id": "fact-025",
+      "concept": 1,
+      "code": 2
+    },
+    {
+      "id": "fact-026",
+      "concept": 2,
+      "code": 2
+    },
+    {
+      "id": "fact-027",
+      "concept": 3,
+      "code": 2
+    },
+    {
+      "id": "fact-028",
+      "concept": 4,
+      "code": 2
+    },
+    {
+      "id": "fact-029",
+      "concept": 5,
+      "code": 2
+    },
+    {
+      "id": "fact-030",
+      "concept": 6,
+      "code": 2
+    },
+    {
+      "id": "fact-031",
+      "concept": 7,
+      "code": 2
+    },
+    {
+      "id": "fact-032",
+      "concept": 8,
+      "code": 2
+    },
+    {
+      "id": "fact-033",
+      "concept": 9,
+      "code": 2
+    },
+    {
+      "id": "fact-034",
+      "concept": 10,
+      "code": 2
+    },
+    {
+      "id": "fact-035",
+      "concept": 11,
+      "code": 2
+    },
+    {
+      "id": "fact-036",
+      "concept": 0,
+      "code": 3
+    },
+    {
+      "id": "fact-037",
+      "concept": 1,
+      "code": 3
+    },
+    {
+      "id": "fact-038",
+      "concept": 2,
+      "code": 3
+    },
+    {
+      "id": "fact-039",
+      "concept": 3,
+      "code": 3
+    },
+    {
+      "id": "fact-040",
+      "concept": 4,
+      "code": 3
+    },
+    {
+      "id": "fact-041",
+      "concept": 5,
+      "code": 3
+    },
+    {
+      "id": "fact-042",
+      "concept": 6,
+      "code": 3
+    },
+    {
+      "id": "fact-043",
+      "concept": 7,
+      "code": 3
+    },
+    {
+      "id": "fact-044",
+      "concept": 8,
+      "code": 3
+    },
+    {
+      "id": "fact-045",
+      "concept": 9,
+      "code": 3
+    },
+    {
+      "id": "fact-046",
+      "concept": 10,
+      "code": 3
+    },
+    {
+      "id": "fact-047",
+      "concept": 11,
+      "code": 3
+    },
+    {
+      "id": "fact-048",
+      "concept": 0,
+      "code": 0
+    },
+    {
+      "id": "fact-049",
+      "concept": 1,
+      "code": 0
+    },
+    {
+      "id": "fact-050",
+      "concept": 2,
+      "code": 0
+    },
+    {
+      "id": "fact-051",
+      "concept": 3,
+      "code": 0
+    },
+    {
+      "id": "fact-052",
+      "concept": 4,
+      "code": 0
+    },
+    {
+      "id": "fact-053",
+      "concept": 5,
+      "code": 0
+    },
+    {
+      "id": "fact-054",
+      "concept": 6,
+      "code": 0
+    },
+    {
+      "id": "fact-055",
+      "concept": 7,
+      "code": 0
+    },
+    {
+      "id": "fact-056",
+      "concept": 8,
+      "code": 0
+    },
+    {
+      "id": "fact-057",
+      "concept": 9,
+      "code": 0
+    },
+    {
+      "id": "fact-058",
+      "concept": 10,
+      "code": 0
+    },
+    {
+      "id": "fact-059",
+      "concept": 11,
+      "code": 0
+    },
+    {
+      "id": "fact-060",
+      "concept": 0,
+      "code": 1
+    },
+    {
+      "id": "fact-061",
+      "concept": 1,
+      "code": 1
+    },
+    {
+      "id": "fact-062",
+      "concept": 2,
+      "code": 1
+    },
+    {
+      "id": "fact-063",
+      "concept": 3,
+      "code": 1
+    },
+    {
+      "id": "fact-064",
+      "concept": 4,
+      "code": 1
+    },
+    {
+      "id": "fact-065",
+      "concept": 5,
+      "code": 1
+    },
+    {
+      "id": "fact-066",
+      "concept": 6,
+      "code": 1
+    },
+    {
+      "id": "fact-067",
+      "concept": 7,
+      "code": 1
+    },
+    {
+      "id": "fact-068",
+      "concept": 8,
+      "code": 1
+    },
+    {
+      "id": "fact-069",
+      "concept": 9,
+      "code": 1
+    },
+    {
+      "id": "fact-070",
+      "concept": 10,
+      "code": 1
+    },
+    {
+      "id": "fact-071",
+      "concept": 11,
+      "code": 1
+    }
+  ],
+  "targets": [
+    "fact-012",
+    "fact-013",
+    "fact-014",
+    "fact-015",
+    "fact-016",
+    "fact-017",
+    "fact-018",
+    "fact-019",
+    "fact-020",
+    "fact-021",
+    "fact-022",
+    "fact-023"
+  ],
+  "controls": [
+    "fact-024",
+    "fact-025",
+    "fact-026",
+    "fact-027",
+    "fact-028",
+    "fact-029",
+    "fact-030",
+    "fact-031",
+    "fact-032",
+    "fact-033",
+    "fact-034",
+    "fact-035"
+  ]
+}
