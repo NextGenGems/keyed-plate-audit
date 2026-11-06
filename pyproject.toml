@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keyed-plate-audit"
+version = "1.0.0"
+description = "Audit model-erasure methods by relearning cost: suppression, ablation, Fisher-scrub, and the keyed plate."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Public dedication — no patent, no license restrictions (see LICENSE)"}
+authors = [
+    {name = "Jackob Sumner-Knapp / PeraAxion LLC"},
+]
+dependencies = ["numpy>=1.24"]
+
+[project.scripts]
+keyed-plate-audit = "keyed_plate_audit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["keyed_plate_audit*"]

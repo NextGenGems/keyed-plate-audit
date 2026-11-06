@@ -1,0 +1,21 @@
+PUBLIC DEDICATION — NO PATENT, NO LICENSE RESTRICTIONS
+
+The keyed-plate erasure architecture, the relearning-cost erasure
+standard, and this software (keyed-plate-audit) were created by
+Jackob Sumner-Knapp, creator, owner, and operator of PeraAxion LLC,
+and are given freely to the AI safety community and to everyone else.
+
+You may use, copy, modify, distribute, sell, and build upon this work,
+for any purpose, in any medium, without asking permission and without
+royalties. No patent will be asserted over the keyed-plate
+architecture or the relearning-cost standard. No license terms
+restrict your use of this software.
+
+Attribution is appreciated but not required: if you publish work that
+builds on this, a line naming the origin — "Keyed-plate erasure and
+the relearning-cost standard, Jake Sumner-Knapp / PeraAxion LLC" —
+helps the idea travel. It is a courtesy, not a condition.
+
+This software is provided "as is", without warranty of any kind. It is
+an audit tool for a toy-scale model; its measurements inform, but do
+not by themselves certify, any production deletion claim.

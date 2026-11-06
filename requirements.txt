@@ -1,0 +1,3 @@
+# keyed-plate-audit runs on CPU with a single dependency.
+# Python >= 3.10 required.
+numpy>=1.24
